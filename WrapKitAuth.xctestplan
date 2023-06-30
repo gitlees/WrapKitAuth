@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "AA97051F-AB8E-40B5-9D97-EBF8975D3F8F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:WrapKitAuth.xcodeproj",
+        "identifier" : "C0B5A67C2A4F19B200AFBF33",
+        "name" : "WrapKitAuthTests"
+      }
+    }
+  ],
+  "version" : 1
+}
