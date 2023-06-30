@@ -8,6 +8,7 @@
 import XCTest
 import WrapKitAuth
 import WrapKitNetworking
+import KeychainSwift
 
 final class KeychainTokenStorageTests: XCTestCase {
     func test_tokenStorage_managesTokens() {
@@ -21,6 +22,8 @@ final class KeychainTokenStorageTests: XCTestCase {
         
         XCTAssertEqual(sut.getAccessToken(), "access token")
         XCTAssertEqual(sut.getRefreshToken(), "refresh token")
+        
+        XCTAssertEqual(sut.clear(), true)
     }
 }
 

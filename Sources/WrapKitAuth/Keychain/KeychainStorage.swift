@@ -27,4 +27,8 @@ public class KeychainTokenStorage: TokenStorage {
     public func set(refreshToken: String) -> Bool {
         return keychain.set(refreshToken, forKey: "RefreshToken")
     }
+    
+    public func clear() -> Bool {
+        return keychain.delete("AccessToken") && keychain.delete("RefreshToken")
+    }
 }

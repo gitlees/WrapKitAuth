@@ -97,5 +97,11 @@ extension TokenServiceTests {
             self.refreshToken = refreshToken
             return true
         }
+        
+        func clear() -> Bool {
+            accessToken = nil
+            refreshToken = nil
+            return true
+        }
     }
 }

@@ -12,4 +12,5 @@ public protocol TokenStorage {
     func getRefreshToken() -> String?
     func set(accessToken: String) -> Bool
     func set(refreshToken: String) -> Bool
+    func clear() -> Bool
 }
