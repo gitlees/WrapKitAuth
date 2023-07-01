@@ -17,12 +17,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_14.0.app
-      
-    - name: Xcode version
-      run: /usr/bin/xcodebuild -version
 
     - name: Build
       run: xcodebuild -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -project WrapKitAuth.xcodeproj -scheme WrapKitAuth -destination 'platform=OS X,arch=x86_64' clean test
