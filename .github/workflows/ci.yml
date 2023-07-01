@@ -25,4 +25,4 @@ jobs:
       run: /usr/bin/xcodebuild -version
 
     - name: Build
-      run: xcodebuild -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -project WrapKitAuth -scheme WrapKitAuth -destination 'platform=OS X,arch=x86_64' clean test
+      run: xcodebuild -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -project WrapKitAuth.xcodeproj -scheme WrapKitAuth -destination 'platform=OS X,arch=x86_64' clean test

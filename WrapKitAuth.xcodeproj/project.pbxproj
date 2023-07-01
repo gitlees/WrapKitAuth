@@ -547,7 +547,7 @@
 			repositoryURL = "https://github.com/gitlees/WrapKitNetworking";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 0.0.2;
 			};
 		};
 		C0B5A6942A4F1ADB00AFBF33 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
