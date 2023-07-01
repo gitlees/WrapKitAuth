@@ -16,10 +16,7 @@ let package = Package(
             url: "https://github.com/evgenyneu/keychain-swift.git",
             from: "20.0.0"
         ),
-        .package(
-            url: "https://github.com/gitlees/WrapKitNetworking.git",
-            from: "0.0.2"
-        )
+        .package(url: "https://github.com/gitlees/WrapKitNetworking.git", branch: "main")
     ],
     targets: [
         .target(
